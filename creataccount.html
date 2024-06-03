@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./accc.css" />
+    <link rel="stylesheet" href="./acc.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-1">
+      <div class="register-screen">
+        <div class="background"></div>
+        <div class="frame-parent">
+          <div class="frame-wrapper">
+            <div class="frame-group">
+              <div class="create-account-wrapper">
+                <h1 class="create-account">Create Account</h1>
+              </div>
+              <p class="create-an-account">
+                Create an account so you can explore all the existing jobs
+              </p>
+            </div>
+          </div>
+          <form class="form">
+            <div class="inputs">
+              <div class="input">
+                <input class="placeholder" placeholder="Email" type="text" />
+              </div>
+              <input class="input1" placeholder="Password" type="text" />
+
+              <div class="input2">
+                <div class="placeholder1">Confirm Password</div>
+              </div>
+            </div>
+            <div class="actions">
+              <button class="button">
+                <b class="button1">Sign up</b>
+              </button>
+              <div class="button2" id="buttonContainer">
+                <div class="button3">Already have an account <a href="login.html"><b>Log In</b></a></div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="register-screen-inner">
+          <div class="frame-container">
+            <div class="button-parent">
+              <div class="button4">
+                <b class="button5">Sign in</b>
+              </div>
+              <div class="button6">
+                <div class="button7">Create new account</div>
+              </div>
+            </div>
+            <div class="social-media-wrapper">
+              <div class="social-media">
+                <div class="or-continue-with">Or continue with</div>
+                <div class="social-media1">
+                  <div class="google">
+                    <div class="phgoogle-logo-bold-wrapper">
+                      <img
+                        class="phgoogle-logo-bold-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./public/phgooglelogobold.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="facebook">
+                    <div class="icsharp-facebook-wrapper">
+                      <img
+                        class="icsharp-facebook-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./public/icsharpfacebook.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="apple">
+                    <div class="icbaseline-apple-wrapper">
+                      <img
+                        class="icbaseline-apple-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./public/icbaselineapple.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "./component.html";
+        });
+      }
+      </script>
+  </body>
+</html>
